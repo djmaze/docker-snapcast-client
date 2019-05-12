@@ -5,7 +5,6 @@ services:
     build:
       context: .
       args:
-        - ARCH
         - SNAPCAST_VERSION
     image: mazzolino/snapcast-client:${SNAPCAST_VERSION}-${ARCH}
     devices:
